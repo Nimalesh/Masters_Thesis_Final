@@ -2,7 +2,7 @@
 
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch 1.13.0](https://img.shields.io/badge/PyTorch-1.13.0-EE4C2C.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 Official PyTorch implementation for the thesis:
 
@@ -353,6 +353,6 @@ See the LICENSE file for details.
 M.Tech in Data Science and Artificial Intelligence  
 Indian Institute of Technology Madras, Zanzibar Campus
 
-For academic collaborations, discussions, or questions regarding the implementation, feel free to open an issue in this repository.
+For academic collaborations, discussions, or questions regarding the implementation, feel free to open an issue in this repository. This repository is provided solely for academic review and research reference purposes.
 
 ---
