@@ -221,12 +221,6 @@ print("Classification Logits:", cls_logits.shape)
 print("Predicted Segmentation Mask:", seg_mask.shape)
 ```
 
-Expected outputs:
-
-```text
-Classification Logits: [1, 3]
-Predicted Segmentation Mask: [1, 1, 256, 256]
-```
 
 ---
 
