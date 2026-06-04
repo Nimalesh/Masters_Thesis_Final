@@ -103,8 +103,8 @@ Experiments were conducted using:
 Clone the repository:
 
 ```bash
-git clone https://github.com/Nimalesh/Thesis_Phase1.git
-cd Thesis_Phase1
+git clone https://github.com/Nimalesh/Masters_Thesis_Final.git
+cd Masters_Thesis_Final
 ```
 
 Install dependencies:
@@ -120,6 +120,10 @@ pip install -r requirements.txt
 Due to medical data privacy restrictions, the original BUS dataset cannot be publicly released.
 
 Users should implement their own PyTorch Dataset and DataLoader.
+Dataset:
+1. BUS-UCLM
+2. Curated BUSI
+3. PRECISE 2025
 
 ### Input Images
 
