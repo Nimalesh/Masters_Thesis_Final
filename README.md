@@ -72,38 +72,6 @@ Advantages include:
 
 ---
 
-## 🧠 Network Pipeline
-
-```text
-Input BUS Image
-        │
-        ▼
-EfficientNet-B6 Encoder
-        │
-        ▼
-     CBAM
-        │
-        ▼
- Latent Features
-        │
- ┌──────┴──────┐
- │             │
- ▼             ▼
-Latent      Classification
-Augmentation     Head
- │
- ▼
-UNet++ Decoder
- │
- ▼
-Deep Supervision
- │
- ▼
-Segmentation Output
-```
-
----
-
 ## ✨ Key Features
 
 - Multi-task learning for segmentation and classification
