@@ -3,7 +3,7 @@ import torch.optim as optim
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from models.network import ExplainableMultiTaskNet
 from utils.losses import JointMultiTaskLoss
-# from data_loader import get_dataloaders  # <--- User needs to provide their own dataloader
+# from data_loader import get_dataloaders  
 
 def train_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -23,9 +23,6 @@ def train_model():
     scheduler = CosineAnnealingLR(optimizer, T_max=epochs)
     criterion = JointMultiTaskLoss(alpha=0.7, beta=0.3, gamma=0.1)
     
-    # DUMMY DATALOADER (Replace with actual DataLoader)
-    # dataloader = get_dataloaders(batch_size=8)
-    # Using random data here to demonstrate the training loop
     dummy_loader = [(torch.randn(8, 3, 256, 256), torch.randint(0, 3, (8,)), torch.randint(0, 2, (8, 1, 256, 256)).float()) for _ in range(10)]
 
     # 3. Training Loop

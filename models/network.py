@@ -28,12 +28,10 @@ class ExplainableMultiTaskNet(nn.Module):
         # 2. CBAM Attention at Bottleneck
         self.cbam = CBAM(in_planes=enc_chs[4])
         
-        # Hyperparams for Latent Augmentation (Section 3.1.2)
         self.minority_class_idx = minority_class_idx
         self.alpha = 0.1
         self.sigma = 0.01
 
-        # 3. UNet++ Decoder (Dense Skip Connections)
         dec_chs = [64, 128, 256, 512, 1024]
         self.up = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=True)
         
@@ -90,7 +88,6 @@ class ExplainableMultiTaskNet(nn.Module):
         z_aug = self.latent_augmentation(z_attn, labels)
         x4_0 = z_aug
 
-        # 3. UNet++ Decoder
         x0_1 = self.conv0_1(torch.cat([x0_0, self.up(x1_0)], 1))
         x1_1 = self.conv1_1(torch.cat([x1_0, self.up(x2_0)], 1))
         x2_1 = self.conv2_1(torch.cat([x2_0, self.up(x3_0)], 1))
@@ -120,5 +117,4 @@ class ExplainableMultiTaskNet(nn.Module):
         if self.training:
             return cls_out, seg_out, [ds1, ds2, ds3, ds4]
         else:
-            # During inference, return sigmoid for segmentation masks
             return cls_out, torch.sigmoid(seg_out)
