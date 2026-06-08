@@ -1,4 +1,4 @@
-# Explainable Attention-Guided Multi-Task Learning for Breast Ultrasound
+# Resource-Efficient Attention-Guided Latent Deep Supervision for Joint Segmentation and Classification of Breast Ultrasound Images
 
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![PyTorch 1.13.0](https://img.shields.io/badge/PyTorch-1.13.0-EE4C2C.svg)](https://pytorch.org/)
@@ -6,7 +6,7 @@
 
 Official PyTorch implementation for the thesis:
 
-**"Attention-Guided Multi-Task Learning for Explainable Breast Ultrasound Segmentation and Classification"**
+**"Resource-Efficient Attention-Guided Latent Deep Supervision for Joint Segmentation and Classification of Breast Ultrasound Images"**
 
 ---
 
@@ -330,7 +330,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @mastersthesis{Elangovan2026,
   author       = {Nimalesh Elangovan},
-  title        = {Attention-Guided Multi-Task Learning for Explainable Breast Ultrasound Segmentation and Classification},
+  title        = {Resource-Efficient Attention-Guided Latent Deep Supervision for Joint Segmentation and Classification of Breast Ultrasound Images},
   school       = {Indian Institute of Technology Madras, Zanzibar Campus},
   year         = {2026}
 }
